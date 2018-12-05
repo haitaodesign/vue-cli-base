@@ -1,5 +1,4 @@
-# my-app-two
-
+# Vue-Cli3.0-Enterprise-Boilerplate
 ## Project setup
 ```
 yarn install
