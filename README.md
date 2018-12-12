@@ -7,6 +7,7 @@
 5. [element-ui](http://element.eleme.io/#/zh-CN)
 6. [axios](https://github.com/axios/axios)
 7. [Vue-Cli 3.0](https://cli.vuejs.org/zh/)
+
 ## Project setup
 ```
 yarn install
