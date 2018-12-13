@@ -1,0 +1,44 @@
+[{
+  "_id": "1",
+  "name": "数据概览",
+  "path": "/dashboard",
+  "icon": "el-icon-rank",
+  "children": [{
+    "_id": "1-1",
+    "name": "客户数据概览",
+    "path": "/home",
+    "icon": "el-icon-info",
+    "children": [{
+      "_id": "1-1-1",
+      "name": "客户数据概览",
+      "path": "/home",
+      "icon": "el-icon-info"
+    }, {
+      "_id": "1-1-2",
+      "name": "邮件数据概览",
+      "path": "/about",
+      "icon": "el-icon-circle-plus",
+      "children": [{
+        "_id": "1-1-1-1",
+        "name": "客户数据概览",
+        "path": "/home3",
+        "icon": "el-icon-info"
+      }, {
+        "_id": "1-1-1-2",
+        "name": "邮件数据概览",
+        "path": "/about3",
+        "icon": "el-icon-circle-plus"
+      }]
+    }]
+  }, {
+    "_id": "1-2",
+    "name": "邮件数据概览",
+    "path": "/about2",
+    "icon": "el-icon-circle-plus"
+  }]
+}, {
+  "_id": "2",
+  "name": "数据概览",
+  "path": "/dashboard",
+  "icon": "el-icon-rank"
+}]

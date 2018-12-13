@@ -1,7 +1,7 @@
 <template>
   <el-container class="container">
     <el-aside class="aside">
-      aside
+      <sider-menu :menuList="menuList"></sider-menu>
     </el-aside>
     <el-container>
       <el-header>header</el-header>
@@ -13,14 +13,24 @@
 </template>
 
 <script>
+import SiderMenu from '@/components/SiderMenu'
+const menuList = require('./SiderMenu.json')
 export default {
-  name: 'BaseLayout'
+  name: 'BaseLayout',
+  data () {
+    return {
+      menuList: menuList
+    }
+  },
+  components: {
+    SiderMenu
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
 .container
   height 100%
-  .aside
-    width 256px !important
+  // .aside
+  //   width 256px !important
 </style>
