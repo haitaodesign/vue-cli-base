@@ -1,9 +1,10 @@
 <template>
   <div class="sider-menu-warapper">
+    <!-- logo -->
     <slot></slot>
-    <el-menu style="height:100%;" default-active="1">
+    <el-menu style="height:100%;" default-active="1" :collapse="isCollapse">
       <template v-for="item in menuList">
-        <template v-if="item.children">
+        <template v-if="item.children && item.children.length > 1">
           <sider-menu-item v-if="item.children && item.children.length > 1" :key="item._id" :parentItem="item"></sider-menu-item>
         </template>
         <template v-else>
@@ -33,10 +34,15 @@ export default {
       default () {
         return []
       }
+    },
+    isCollapse: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
-    return {}
+    return {
+    }
   },
   methods: {
   },
