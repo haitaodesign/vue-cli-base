@@ -1,7 +1,12 @@
 [{
+  "_id": "2",
+  "name": "首页",
+  "path": "/dashboard",
+  "icon": "el-icon-rank"
+}, {
   "_id": "1",
   "name": "数据概览",
-  "path": "/dashboard",
+  "path": "/dashboardd",
   "icon": "el-icon-rank",
   "children": [{
     "_id": "1-1",
@@ -36,9 +41,4 @@
     "path": "/about2",
     "icon": "el-icon-circle-plus"
   }]
-}, {
-  "_id": "2",
-  "name": "数据概览",
-  "path": "/dashboard",
-  "icon": "el-icon-rank"
 }]
