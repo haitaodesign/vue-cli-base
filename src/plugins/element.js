@@ -11,7 +11,8 @@ import {
   MenuItem,
   MenuItemGroup
 } from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// ps: 组件样式需要按需引入
+import '../../theme/index.css'
 Vue.use(Button)
 Vue.use(Container)
 Vue.use(Header)
