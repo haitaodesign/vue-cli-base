@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2018-12-19 11:44:55
  * @Last Modified by: lihaitao
- * @Last Modified time: 2018-12-19 14:47:51
+ * @Last Modified time: 2018-12-19 16:46:00
  */
 import { SET_COLLAPSE, SET_MENULIST } from './mutation-types'
 import SystemApi from '../../../api/system.js'
