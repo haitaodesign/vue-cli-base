@@ -1,9 +1,7 @@
-import Home from '@/views/Home.vue'
-
 export default [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: Home
+    component: () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboard')
   }
 ]
