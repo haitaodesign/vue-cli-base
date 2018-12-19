@@ -19,3 +19,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.about
+  h1
+    color $--color-primary
+</style>
