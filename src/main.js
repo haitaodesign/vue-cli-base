@@ -4,6 +4,7 @@ import router from '@/router'
 import store from '@/store/index.js'
 import 'normalize.css'
 import '@/plugins/element.js'
+import '@/mock/index.js'
 Vue.config.productionTip = false
 new Vue({
   router,
