@@ -1,15 +1,31 @@
 <template>
-  <div class="sider-menu-warapper">
+  <div>
     <!-- logo start-->
     <slot></slot>
     <!-- logo end-->
-    <el-menu style="height:100%;" default-active="1" :collapse="isCollapse">
+    <el-menu
+      style="height:100%;border-right:none;"
+      :default-active="defaultActive"
+      :collapse="isCollapse"
+      background-color="#202736"
+      text-color="#99a3ae"
+      active-text-color="#fff"
+      :collapse-transition="false"
+      @select="handleOnSelect"
+      >
       <template v-for="item in menuList">
-        <template v-if="item.children && item.children.length > 1">
-          <aside-menu-item v-if="item.children && item.children.length > 1" :key="item._id" :parentItem="item"></aside-menu-item>
+        <template v-if="item.children && item.children.length > 0">
+          <aside-menu-item
+            v-if="item.children && item.children.length > 0"
+            :key="item._id"
+            :parentItem="item"
+            />
         </template>
         <template v-else>
-          <el-menu-item :index="item.path" :key="item._id">
+          <el-menu-item
+            :index="item.path"
+            :key="item._id"
+            >
             <i :class="item.icon"></i>
             <span slot="title">{{item.name}}</span>
           </el-menu-item>
@@ -29,6 +45,9 @@
 import AsideMenuItem from './aside-menu-item.vue'
 export default {
   name: 'SiderMenu',
+  components: {
+    AsideMenuItem
+  },
   props: {
     menuList: {
       type: Array,
@@ -39,6 +58,10 @@ export default {
     isCollapse: {
       type: Boolean,
       default: false
+    },
+    defaultActive: {
+      type: String,
+      default: ''
     }
   },
   data () {
@@ -46,14 +69,14 @@ export default {
     }
   },
   methods: {
-  },
-  components: {
-    AsideMenuItem
+    handleOnSelect (index, indexPath) {
+      this.$emit('on-select', { index, indexPath })
+    }
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-.sider-menu-warapper
-  height 100%
+<style lang="stylus">
+.is-active
+  background-color #459ae9 !important
 </style>

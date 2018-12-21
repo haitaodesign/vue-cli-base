@@ -5,7 +5,7 @@
       <span slot="title">{{parentItem.name}}</span>
     </template>
     <template v-for="item in parentItem.children">
-      <sider-menu-item v-if="item.children && item.children.length > 1" :parentItem="item" :key="item._id"></sider-menu-item>
+      <sider-menu-item v-if="item.children && item.children.length > 0" :parentItem="item" :key="item._id"></sider-menu-item>
       <el-menu-item v-else :index="item.path" :key="item._id">
         <i :class="item.icon"></i>
         <span slot="title">{{item.name}}</span>
