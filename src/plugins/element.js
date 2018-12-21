@@ -9,7 +9,12 @@ import {
   Menu,
   Submenu,
   MenuItem,
-  MenuItemGroup
+  MenuItemGroup,
+  Breadcrumb,
+  BreadcrumbItem,
+  Row,
+  Col,
+  Card
 } from 'element-ui'
 // ps: 组件样式需要按需引入
 import '../../theme/index.css'
@@ -23,3 +28,8 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Card)

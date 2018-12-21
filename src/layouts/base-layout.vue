@@ -1,5 +1,5 @@
 <template>
-  <el-container class="container">
+  <el-container class="layout">
     <el-aside :class="['aside-menu', isCollapse === true ? 'collapse': '' ]">
       <aside-menu
       :menuList="menuList"
@@ -18,7 +18,7 @@
       </aside-menu>
     </el-aside>
     <el-container>
-      <el-header>
+      <el-header class="layout-header">
         <base-header @on-click-menu="handleOpenOrCloseMenuClick"></base-header>
       </el-header>
       <el-main>
@@ -31,7 +31,7 @@
 <script>
 import AsideMenu from '@/components/aside-menu/aside-menu.vue'
 import BaseHeader from './base-header.vue'
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapMutations, mapActions } from 'vuex'
 export default {
   name: 'BaseLayout',
   components: {
@@ -51,7 +51,11 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      this.defaultActive = to.path
+      const path = to.path
+      if (path === '/dashboard') {
+        this.SET_BREADCRUMBDATA([])
+      }
+      this.defaultActive = path
     }
   },
   mounted () {
@@ -61,19 +65,39 @@ export default {
     ...mapActions('system', [
       'getMenuList'
     ]),
+    ...mapMutations('system', [
+      'SET_BREADCRUMBDATA'
+    ]),
     handleOpenOrCloseMenuClick () {
       this.isCollapse = !this.isCollapse
     },
-    handleOnSelect ({ index }) {
+    handleOnSelect ({ index, indexPath }) {
+      this.initBreadcrumbData(indexPath)
       this.$router.push({ path: index })
+    },
+    initBreadcrumbData (indexPath) {
+      let data = []
+      const list = this._.cloneDeep(this.menuList)
+      indexPath.forEach(item => {
+        const menuTree = new this.util.MenuTree()
+        const curMenu = menuTree.getCurrentMenuList(list, item)
+        if (curMenu && curMenu.path !== '/dashboard') {
+          data.push({
+            name: curMenu.name
+          })
+        }
+      })
+      this.SET_BREADCRUMBDATA(data)
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.container
+.layout
   height 100%
+  .layout-header
+    background-color $--bg-primary
   .collapse
     width 64px !important
   .aside-menu

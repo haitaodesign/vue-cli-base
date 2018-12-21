@@ -2,16 +2,17 @@
  * @Author: lihaitao
  * @Date: 2018-12-19 11:44:55
  * @Last Modified by: lihaitao
- * @Last Modified time: 2018-12-19 16:46:00
+ * @Last Modified time: 2018-12-20 16:21:56
  */
-import { SET_COLLAPSE, SET_MENULIST } from './mutation-types'
+import { SET_COLLAPSE, SET_MENULIST, SET_BREADCRUMBDATA } from './mutation-types'
 import SystemApi from '../../../api/system.js'
 const systemApi = new SystemApi()
 export default {
   namespaced: true,
   state: {
     isCollapse: false,
-    menuList: []
+    menuList: [],
+    breadcrumbData: []
   },
   getters: {
   },
@@ -21,6 +22,9 @@ export default {
     },
     [SET_MENULIST] (state, payload) {
       state.menuList = payload
+    },
+    [SET_BREADCRUMBDATA] (state, payload) {
+      state.breadcrumbData = payload
     }
   },
   actions: {

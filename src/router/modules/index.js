@@ -6,4 +6,5 @@ modules.keys().forEach(key => {
     moduleRoutes = moduleRoutes.concat(modules(key).default)
   }
 })
+console.log(moduleRoutes)
 export default moduleRoutes
