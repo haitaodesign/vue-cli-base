@@ -13,7 +13,6 @@
 11. [lodash](https://www.lodashjs.com/)
 12. [Echarts](http://echarts.baidu.com/)
 13. [v-charts](https://v-charts.js.org/#/)
-## Project setup
 
 ## Project setup
 ```
