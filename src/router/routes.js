@@ -1,7 +1,5 @@
 import RouterModules from './modules'
 const commonRoute = [{
-  path: '/',
-  redirect: '/dashboard',
-  hidden: true
+  path: '/'
 }]
 export default commonRoute.concat(RouterModules)
