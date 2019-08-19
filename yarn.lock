@@ -10264,17 +10264,6 @@ strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "http://registry.npm.taobao.org/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-style-resources-loader@^1.2.1:
-  version "1.2.1"
-  resolved "http://registry.npm.taobao.org/style-resources-loader/download/style-resources-loader-1.2.1.tgz#7679d5dc2f27046b2fc2b83c1d5b6c1b8a9b820c"
-  integrity sha1-dnnV3C8nBGsvwrg8HVtsG4qbggw=
-  dependencies:
-    glob "^7.1.2"
-    is-callable "^1.1.4"
-    is-plain-object "^2.0.4"
-    is-promise "^2.1.0"
-    loader-utils "^1.1.0"
-
 stylehacks@^4.0.0:
   version "4.0.1"
   resolved "http://registry.npm.taobao.org/stylehacks/download/stylehacks-4.0.1.tgz#3186595d047ab0df813d213e51c8b94e0b9010f2"
@@ -11019,11 +11008,6 @@ vm-browserify@0.0.4:
 vue-cli-plugin-element@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/vue-cli-plugin-element/download/vue-cli-plugin-element-1.0.0.tgz#2ee8cfecb9a49aabdc1d4cb58934113bddf3b4c0"
-
-vue-cli-plugin-style-resources-loader@^0.1.3:
-  version "0.1.3"
-  resolved "http://registry.npm.taobao.org/vue-cli-plugin-style-resources-loader/download/vue-cli-plugin-style-resources-loader-0.1.3.tgz#0fed01f429ba4af2f4265161dbeab9e9d233e810"
-  integrity sha1-D+0B9Cm6SvL0JlFh2+q56dIz6BA=
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
