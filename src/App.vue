@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    Vue Cli 3
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
 </script>
 
