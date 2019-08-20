@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2018-12-19 11:44:55
  * @Last Modified by: lihaitao
- * @Last Modified time: 2018-12-20 16:21:56
+ * @Last Modified time: 2019-08-20 10:18:16
  */
 import { SET_COLLAPSE, SET_MENULIST, SET_BREADCRUMBDATA } from './mutation-types'
 import SystemApi from '../../../api/system.js'
@@ -34,7 +34,7 @@ export default {
         const data = res.data
         commit('SET_MENULIST', data)
       } catch (error) {
-        console.log(error)
+        // console.log(error)
       }
     }
   }
