@@ -10,8 +10,8 @@ module.exports = {
   rules: {
     'no-console': 'warn',
     'no-debugger': 'error',
-    'vue/order-in-components': 'error',
-    'vue/no-confusing-v-for-v-if': 'error'
+    'vue/component-name-in-template-casing': 'off',
+    'vue/html-self-closing': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
