@@ -2,22 +2,14 @@
  * @Author: lihaitao
  * @Date: 2018-12-19 11:45:15
  * @Last Modified by: lihaitao
- * @Last Modified time: 2018-12-19 14:33:40
+ * @Last Modified time: 2019-08-20 16:15:47
  */
-import QS from 'qs'
 import service from './interceptors.js'
 
 class BaseHttpClient {
   constructor () {
     this.$http = service
-    this.OptionsDefault = {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      transformRequest: function (data) {
-        return QS.stringify(data)
-      }
-    }
+    this.OptionsDefault = {}
   }
   get (url, config = {}) {
     return this.$http.get(url, config)
