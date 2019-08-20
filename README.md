@@ -2,7 +2,6 @@
 
 基于 Vue CLI 3 构建企业级项目最佳实践模板
 
-
 ## 技术选型
 
 ### Vue 生态
@@ -12,8 +11,6 @@
 3. [Vuex](https://vuex.vuejs.org/zh/)
 4. [Vue-Cli 3.0](https://cli.vuejs.org/zh/)
 5. [element-ui](http://element.eleme.io/#/zh-CN)
-
-
 
 ### 第三方库
 
