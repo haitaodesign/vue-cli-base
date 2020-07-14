@@ -1,5 +1,5 @@
 const contexts = require.context('.', true, /\.js$/)
-let modules = {}
+const modules = {}
 contexts.keys().forEach(key => {
   const index = key.split('/')[2]
   const contextName = key.split('/')[1]

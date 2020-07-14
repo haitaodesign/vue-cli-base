@@ -11,15 +11,19 @@ class BaseHttpClient {
     this.$http = service
     this.OptionsDefault = {}
   }
+
   get (url, config = {}) {
     return this.$http.get(url, config)
   }
+
   post (url, data = undefined, config = {}) {
     return this.$http.post(url, data, { ...this.OptionsDefault, ...config })
   }
+
   put (url, data = undefined, config = {}) {
     return this.$http.put(url, data, { ...this.OptionsDefault, ...config })
   }
+
   delete (url, data = undefined, config = {}) {
     return this.$http.delete(url, data, config)
   }
