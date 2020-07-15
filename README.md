@@ -1,6 +1,6 @@
-# Vue-Cli3.0-Enterprise-Boilerplate
+# vue-cli-base
 
-基于 Vue CLI 3 构建企业级项目最佳实践模板
+基于 Vue CLI 构建企业级项目最佳实践模板
 
 ## 技术选型
 
@@ -9,19 +9,16 @@
 1. [Vue](https://cn.vuejs.org/)
 2. [Vue-Router](https://router.vuejs.org/zh/)
 3. [Vuex](https://vuex.vuejs.org/zh/)
-4. [Vue-Cli 3.0](https://cli.vuejs.org/zh/)
-5. [element-ui](http://element.eleme.io/#/zh-CN)
+4. [Vue-Cli](https://cli.vuejs.org/zh/)
 
 ### 第三方库
 
-1. [stylus](https://stylus.bootcss.com/)
-3. [axios](https://github.com/axios/axios)
-4. [webpack](https://www.webpackjs.com/)
-5. [webpack-chain](https://github.com/neutrinojs/webpack-chain)
+2. [webpack](https://www.webpackjs.com/)
+3. [webpack-chain](https://github.com/neutrinojs/webpack-chain)
 
 ## 项目结构
 
-```
+``` js
 .
 ├── docs
 │   ├── .vuepress
@@ -53,27 +50,27 @@
 ```
 
 ## Project setup
-```
+``` js
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
-```
+``` js
 yarn run serve
 ```
 
 ### Compiles and minifies for production
-```
+``` js
 yarn run build
 ```
 
 ### Run your tests
-```
+``` js
 yarn run test
 ```
 
 ### Lints and fixes files
-```
+``` js
 yarn run lint
 ```
 
