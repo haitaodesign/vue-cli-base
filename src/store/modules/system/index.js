@@ -5,8 +5,6 @@
  * @Last Modified time: 2019-08-20 10:18:16
  */
 import { SET_COLLAPSE, SET_MENULIST, SET_BREADCRUMBDATA } from './mutation-types'
-import SystemApi from '../../../api/system.js'
-const systemApi = new SystemApi()
 export default {
   namespaced: true,
   state: {
@@ -30,9 +28,6 @@ export default {
   actions: {
     async getMenuList ({ commit }, payload) {
       try {
-        const res = await systemApi.getMenuList()
-        const data = res.data
-        commit('SET_MENULIST', data)
       } catch (error) {
         // console.log(error)
       }
