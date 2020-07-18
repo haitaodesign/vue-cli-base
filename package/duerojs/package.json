@@ -1,0 +1,12 @@
+{
+  "name": "duerojs",
+  "version": "0.0.1",
+  "description": "基于 Vue.js 的快速开发应用框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lihaitao",
+  "license": "ISC"
+}
