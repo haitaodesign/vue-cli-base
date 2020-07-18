@@ -1,4 +1,4 @@
-// 获取所有组件模块
+// 获取所有路由模块
 function getRouters () {
   const modules = require.context('@/views', true, /router.js/)
   let routers = []
@@ -8,7 +8,7 @@ function getRouters () {
   return routers
 }
 
-// 全局注册组件
+// 返回路由数组
 export default function loaderRouters () {
   return getRouters()
 }
