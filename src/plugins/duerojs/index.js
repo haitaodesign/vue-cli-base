@@ -3,4 +3,6 @@ import Vue from 'vue'
 
 import { loaderComponents } from '@duerojs'
 
-loaderComponents(Vue)
+export default function () {
+  loaderComponents(Vue)
+}
