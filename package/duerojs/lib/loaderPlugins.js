@@ -4,7 +4,6 @@ function getPlugins () {
   let plugins = []
   modules.keys().forEach(key => {
     if (key !== './index.js') {
-      // eslint-disable-next-line no-debugger
       plugins = plugins.concat(modules(key).default)
     }
   })
@@ -15,7 +14,6 @@ function getPlugins () {
 export default function loaderPlugins () {
   const plugins = getPlugins()
   plugins.forEach(module => {
-    // eslint-disable-next-line no-console
     module()
   })
 }
