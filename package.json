@@ -10,7 +10,7 @@
     "dev:docs": "vuepress dev docs"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
