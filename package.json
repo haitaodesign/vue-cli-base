@@ -31,7 +31,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "mockjs": "^1.0.1-beta3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^9.0.2",
     "scss": "^0.2.4",
     "scss-loader": "^0.0.1",
